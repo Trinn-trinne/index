@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новорічна листівка ✨</title>
+
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --card-bg: rgba(255, 255, 255, 0.12);
+      --text: #f5f7fa;
+      --accent: #ffd166;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: var(--text);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      padding: 28px 24px 32px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .title {
+      font-size: clamp(26px, 5vw, 34px);
+      text-align: center;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 24px;
+    }
+
+    .stickers {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      font-size: 34px;
+      margin-bottom: 24px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    .section {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .creative {
+      text-align: center;
+      font-size: 15px;
+      padding: 16px;
+      border: 1px dashed rgba(255, 255, 255, 0.35);
+      border-radius: 16px;
+      margin-top: 20px;
+    }
+
+    .creative span {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 22px;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 36px 34px 40px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="title">З Новим роком ✨</h1>
+    <p class="subtitle">Нехай цей рік буде теплішим, ніж попередній</p>
+
+    <div class="stickers">
+      🎄 ✨ ❄️ 🕯️ 🎁
+    </div>
+
+    <div class="section">
+      <h2>With thanks, Katrin</h2>
+      <p>
+       Якщо ти читаєш це, значить у цьому році між нами було щось спільне — і це приємно усвідомлювати. Дякую за твою присутність і за те, ким ти є. Нехай новий рік принесе тобі світло, ясність і потрібні зустрічі! </p>
+    </div>
+
+    <div class="section">
+      <h2>Wishes for the coming year</h2>
+      <p>
+        Бажаю рішень, які даються легко. Людей, поруч з якими можна мовчати.
+        І моментів, які хочеться запам’ятати, а не пережити! Здійснення мрій та внутрішнього спокою. З Новим Роком!!!
+      </p>
+    </div>
+
+   
+    <div class="creative">
+      Благословінь і усього найкращого! <span>🌙✨</span><br />
+      (p.s. не переходь більше так по незнайомим посиланням, це може бути небезпечно)
+    
+    </div>
+
+    <footer>
+      Зроблено з теплом і бажанням принести трохи магії Новорічного настрою❄️
+    </footer>
+  </div>
+</body>
+</html>
